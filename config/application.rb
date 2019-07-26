@@ -21,7 +21,7 @@ module GeneratorApp
   class Application < Rails::Application
     config.generators do |g|
       g.orm             :active_record #default connection to database sql
-      g.template_engine :erb  #use slim or haml, in this case not
+      g.template_engine :erb  #use slim or haml, in this case we use erb
       g.test_framework  :test_unit, fixture: false
       g.stylesheets     false   #cancel generation of stylesheets
       g.javascripts     true   #cancel generation of scripts
